@@ -1,0 +1,6 @@
+# dsh-everything-wp — Cordis plugin tree patch
+# Schema: YAML array of insert/override rows
+# Plugin rows reference the package by name (Node resolution finds the installed code)
+- insert:
+  - id: everything-wp
+    name: dsh-everything-wp

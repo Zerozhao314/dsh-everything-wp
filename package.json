@@ -1,0 +1,52 @@
+{
+  "name": "dsh-everything-wp",
+  "version": "1.7.0-dsh.3",
+  "description": "DSH adapter for everything-wp — WordPress plugin dev AI toolkit. Phase 3: 18 commands + 5 agents with mode gating and inline rules.",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist/",
+    "agents/",
+    "commands/",
+    "rules/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "wordpress",
+    "plugin-development",
+    "tdd",
+    "code-review",
+    "phpunit",
+    "phpstan"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-llm": "*"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@types/node": "^26.2.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.4.0"
+  },
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/oberonlai/everything-wp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oberonlai/dsh-everything-wp.git"
+  }
+}
