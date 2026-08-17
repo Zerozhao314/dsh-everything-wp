@@ -1,5 +1,7 @@
 # dsh-everything-wp
 
+> English | [中文](README.zh-CN.md)
+
 DSH (DeepSeek Harness) adapter for [everything-wp](https://github.com/oberonlai/everything-wp) — WordPress plugin development AI toolkit.
 
 ## Status: Phase 3 Complete (v1.7.0-dsh.3)
